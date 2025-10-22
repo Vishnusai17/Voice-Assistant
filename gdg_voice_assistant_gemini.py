@@ -80,13 +80,13 @@ def run_once():
 # run_once()
 
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyAU5HwPwikpSiF78SwZUSgchF4yRUa2UMY")
+genai.configure(api_key="YOUR_GEMINI_API_KEY")
 test = genai.GenerativeModel("gemini-1.5-flash")
 print(test.generate_content("Hello from workshop test!").text)
 
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyAU5HwPwikpSiF78SwZUSgchF4yRUa2UMY")
+genai.configure(api_key="YOUR_GEMINI_API_KEY")
 
 # List all available models for your account
 for m in genai.list_models():
